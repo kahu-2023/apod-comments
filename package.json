@@ -18,7 +18,8 @@
     "test:watch": "jest --watchAll",
     "webpack": "webpack --config ./client/webpack.config.js",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "format": "prettier -w '**/*.{js,jsx,ts,tsx}'"
+    "format": "prettier -w '**/*.{js,jsx,ts,tsx}'",
+    "knex": "knex --knexfile ./server/db/knexfile.js"
   },
   "keywords": [
     "frontend"
@@ -43,7 +44,9 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "knex": "^2.4.2",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.15.6",
